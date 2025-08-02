@@ -8,7 +8,7 @@ This task simulates temperature monitoring using a DHT11 sensor and Arduino Uno.
 - Breadboard and jumper wires
 
 ## Screenshot
-![Screenshot](Screenshot.png)
+https://github.com/Sivanesan-ece/embedded-systems-internship/blob/main/Screenshot%202025-08-02%20135853.png?raw=true
 
 ## Output
 Displays temperature and humidity on the serial monitor.

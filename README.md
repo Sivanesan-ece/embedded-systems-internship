@@ -14,7 +14,6 @@ This task simulates temperature monitoring using a DHT11 sensor and Arduino Uno.
 Displays temperature and humidity on the serial monitor.
 
 ## Code
-// Task 1: Temperature Sensor Monitoring using LM35
 const int sensorPin = A0;
 float voltage, temperature;
 
@@ -23,9 +22,9 @@ void setup() {
 }
 
 void loop() {
-  int reading = analogRead(sensorPin); // Convert analog reading to voltage
-  voltage = reading * (5.0 / 1023.0);
-  temperature = (voltage - 0.5) * 100.0; // Convert voltage to Celsius
+  int reading = analogRead(sensorPin);
+  voltage = reading * (5.0 / 1023.0);       // Convert analog reading to voltage
+  temperature = (voltage - 0.5) * 100.0;    // Convert voltage to Celsius
 
   Serial.print("Temperature: ");
   Serial.print(temperature);
@@ -33,4 +32,5 @@ void loop() {
 
   delay(1000);  // Wait 1 second
 }
+
 
